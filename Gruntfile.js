@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     var config = {
         src: 'node_modules',
         tmp: '.tmp',
-        theme: 'wp-content/themes/meru',
+        theme: 'wp-content/themes/balibeach',
     };
 
     grunt.initConfig({
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
                 },
                 options: {
                     watchTask: true,
-                    proxy: 'localhost/meruhotels',
+                    proxy: 'localhost/balibeach',
                 },
             },
         },
