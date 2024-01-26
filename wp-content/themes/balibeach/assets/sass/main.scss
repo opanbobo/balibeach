@@ -2,7 +2,28 @@
   padding: 0;
   margin: 0;
 }
-// @import url('https://fonts.cdnfonts.com/css/univers-lt-std?styles=21292,21276');
+
+@font-face {
+  font-family: 'AprisVariableRegular';
+  src: url('../fonts/AprisVariableRegular.eot');
+  src: url('../fonts/AprisVariableRegular.eot') format('embedded-opentype'),
+       url('../fonts/AprisVariableRegular.woff2') format('woff2'),
+       url('../fonts/AprisVariableRegular.woff') format('woff'),
+       url('../fonts/AprisVariableRegular.ttf') format('truetype'),
+       url('../fonts/AprisVariableRegular.svg#AprisVariableRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'Wigrum_Regular';
+  src: url('../fonts/Wigrum_Regular.eot');
+  src: url('../fonts/Wigrum_Regular.eot') format('embedded-opentype'),
+       url('../fonts/Wigrum_Regular.woff2') format('woff2'),
+       url('../fonts/Wigrum_Regular.woff') format('woff'),
+       url('../fonts/Wigrum_Regular.ttf') format('truetype'),
+       url('../fonts/Wigrum_Regular.svg#Wigrum_Regular') format('svg');
+}
+
+
 @font-face {
   font-family: 'MinionProRegular';
   src: url('../fonts/MinionProRegular.eot');
@@ -12,34 +33,14 @@
        url('../fonts/MinionProRegular.ttf') format('truetype'),
        url('../fonts/MinionProRegular.svg#MinionProRegular') format('svg');
 }
-@font-face {
-  font-family: 'UniversLightNormalRegular';
-  src: url('../fonts/UniversLightNormalRegular.eot');
-  src: url('../fonts/UniversLightNormalRegular.eot') format('embedded-opentype'),
-       url('../fonts/UniversLightNormalRegular.woff2') format('woff2'),
-       url('../fonts/UniversLightNormalRegular.woff') format('woff'),
-       url('../fonts/UniversLightNormalRegular.ttf') format('truetype'),
-       url('../fonts/UniversLightNormalRegular.svg#UniversLightNormalRegular') format('svg');
-}
-@font-face {
-  font-family: 'Voyage';
-  src: url('../fonts/Voyage-Regular.eot');
-  src: url('../fonts/Voyage-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Voyage-Regular.woff2') format('woff2'),
-      url('../fonts/Voyage-Regular.woff') format('woff'),
-      url('../fonts/Voyage-Regular.ttf') format('truetype'),
-      url('../fonts/Voyage-Regular.svg#Voyage-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 
 
 // general
 //////////////
 body{
-  font-family: 'UniversLightNormalRegular';
+  // font-family: 'UniversLightNormalRegular';
+  font-family: 'Wigrum_Regular';
   overflow-x: hidden;
 }
 
@@ -163,7 +164,7 @@ header.wp-block-template-part {
 }
 
 .voyage-48{
-  font-family: 'Voyage';
+  font-family: 'AprisVariableRegular';
   font-size: 40px;
   color: #4D4D4D;
   @media screen and (max-width:768px) {
@@ -183,7 +184,7 @@ header.wp-block-template-part {
 
 .title-section-page{
   // font-family: 'MinionProRegular';
-  font-family: 'Voyage';
+  font-family: 'AprisVariableRegular';
   font-size: 56px;
   color: #0F2335;
   @media screen and (max-width:768px) {
@@ -217,7 +218,7 @@ header.wp-block-template-part {
 }
 
 .title-overlay-top-section{
-  font-family: 'Voyage';
+  font-family: 'Voyage' !important;
   font-size: 70px !important;
   @media screen and (max-width:768px) {
     font-size: 52px !important;
@@ -230,13 +231,14 @@ header.wp-block-template-part {
 .home{
   .section-overlay-page{
     .wp-block-cover__background{
-      background-color: #0F2335;
+      background: rgba(15, 1, 1, 0.60); 
       opacity: .7;
     }
   }
   .title-overlay-img{
-    font-family: 'Voyage';
-    font-size: 48px !important;
+    font-family: 'AprisVariableRegular' !important;
+    font-size: 56px !important;
+    letter-spacing: 2.24px; 
     @media screen and (max-width:768px) {
       font-size: 42px !important;
     }
@@ -271,12 +273,17 @@ header.wp-block-template-part {
   }
 }
 
+.column-exp-home-wrapper{
+  background: #E5E5E5;
+  padding: 80px 0;
+}
+
 .home-exp-wrapper{
   background-color: #F0EEDC;
   color: #4D4D4D;
   .home-exp-title{
     font-size: 48px;
-    font-family: 'Voyage';
+    font-family: 'AprisVariableRegular';
   }
   .home-exp-desc{
     font-size: 20px;
@@ -289,8 +296,8 @@ header.wp-block-template-part {
     li{
       list-style: none;
       font-size: 24px;
-      font-family: 'Voyage';
-      font-weight: 700;
+      font-family: 'AprisVariableRegular';
+      // font-weight: 700;
       margin-bottom: 15px;
       a{
         color: #4D4D4D;
@@ -412,7 +419,7 @@ header.wp-block-template-part {
 .rk-room-title {
   text-transform: uppercase;
   font-size: 24px;
-  font-family: 'Voyage';
+  font-family: 'AprisVariableRegular';
 }
 
 .rk-room-4 {
@@ -534,11 +541,11 @@ header.wp-block-template-part {
   }
 }
 .rk-footer{
-  background: #0F2335;
+  background: #0F0101;
   color: #D9D9D9;
   .title-section{
     h1{
-      font-family: 'Voyage';
+      font-family: 'AprisVariableRegular';
       font-size: 40px;
       color: #fff;
     }
