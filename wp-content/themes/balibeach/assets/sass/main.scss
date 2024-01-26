@@ -1,0 +1,620 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+// @import url('https://fonts.cdnfonts.com/css/univers-lt-std?styles=21292,21276');
+@font-face {
+  font-family: 'MinionProRegular';
+  src: url('../fonts/MinionProRegular.eot');
+  src: url('../fonts/MinionProRegular.eot') format('embedded-opentype'),
+       url('../fonts/MinionProRegular.woff2') format('woff2'),
+       url('../fonts/MinionProRegular.woff') format('woff'),
+       url('../fonts/MinionProRegular.ttf') format('truetype'),
+       url('../fonts/MinionProRegular.svg#MinionProRegular') format('svg');
+}
+@font-face {
+  font-family: 'UniversLightNormalRegular';
+  src: url('../fonts/UniversLightNormalRegular.eot');
+  src: url('../fonts/UniversLightNormalRegular.eot') format('embedded-opentype'),
+       url('../fonts/UniversLightNormalRegular.woff2') format('woff2'),
+       url('../fonts/UniversLightNormalRegular.woff') format('woff'),
+       url('../fonts/UniversLightNormalRegular.ttf') format('truetype'),
+       url('../fonts/UniversLightNormalRegular.svg#UniversLightNormalRegular') format('svg');
+}
+@font-face {
+  font-family: 'Voyage';
+  src: url('../fonts/Voyage-Regular.eot');
+  src: url('../fonts/Voyage-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Voyage-Regular.woff2') format('woff2'),
+      url('../fonts/Voyage-Regular.woff') format('woff'),
+      url('../fonts/Voyage-Regular.ttf') format('truetype'),
+      url('../fonts/Voyage-Regular.svg#Voyage-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+// general
+//////////////
+body{
+  font-family: 'UniversLightNormalRegular';
+  overflow-x: hidden;
+}
+
+figure{
+  margin: 0;
+}
+
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+// header
+//////////////
+.wp-block-navigation .wp-block-navigation-item__content{
+  text-align: center !important;
+  color: #fff !important;
+  font-size: 56px !important;
+  font-family: 'Voyage' !important;
+  @media screen and (max-width: 768px) {
+    font-size: 26px;
+  }
+}
+
+.wp-block-navigation__container.is-responsive.wp-block-navigation{
+  text-align: center;
+  width: 100%;
+  align-items: center !important;
+}
+
+.btn-top-header{
+  font-size: 20px !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  border-color: #fff !important;
+  @media screen and (max-width: 768px) {
+    font-size: 16px !important;
+    padding: 10px 16px !important;
+  }
+  &:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}
+
+header.wp-block-template-part {
+  padding-top: 140px;
+  padding-bottom: 130px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -322px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wp-block-navigation__responsive-container-open {
+  width: 42px;
+  height: 42px;
+  background: url(../img/burger.svg) center center no-repeat;
+}
+
+.wp-block-navigation__responsive-container-open svg,
+.wp-block-navigation__responsive-container-close svg {
+  display: none;
+}
+
+.wp-block-navigation__responsive-container-close {
+  top: 15px;
+  right: 5%;
+  width: 42px;
+  height: 42px;
+  // background: url(../img/cross.svg) center center no-repeat;
+  background: url(../img/x-white.png) center center no-repeat;
+}
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{
+  background-color: #0F2335B2 !important;
+}
+.wp-block-navigation__responsive-container.is-menu-open {
+  padding: 0 20px !important;
+  background-color: #0F2335B2 !important;
+}
+
+.wp-block-navigation__responsive-container-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rk-top-banner {
+  margin-top: -276px;
+}
+
+.universe-28{
+  font-family: 'Univers LT Std', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  @media screen and (max-width:768px) {
+    font-size: 24px;
+  }
+}
+
+.universe-20{
+  font-family: 'Univers LT Std', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.85;
+  color: #4d4d4d;
+  @media screen and (max-width:768px) {
+    font-size: 20px;
+  }
+}
+
+.voyage-48{
+  font-family: 'Voyage';
+  font-size: 40px;
+  color: #4D4D4D;
+  @media screen and (max-width:768px) {
+    font-size: 48px;
+  }
+}
+
+.wp-block-image.size-full.h-600{
+  img{
+    width: 100%;
+    object-fit: cover;
+    @media (min-width: 1200px) {
+      height: 600px;
+    }
+  }
+}
+
+.title-section-page{
+  // font-family: 'MinionProRegular';
+  font-family: 'Voyage';
+  font-size: 56px;
+  color: #0F2335;
+  @media screen and (max-width:768px) {
+    font-size: 50px;
+  }
+}
+
+.subtitle-section-page-top{
+  font-size: 28px;
+  font-weight: 500;
+  color: #4D4D4D;
+  line-height: 150%;
+}
+
+.subtitle-section-page{
+  font-size: 28px;
+  font-weight: 500;
+  color: #4D4D4D;
+  line-height: 150%;
+  @media screen and (max-width:768px) {
+    font-size: 20px;
+  }
+}
+
+.btn-outline-primary{
+  font-family: 'MinionProRegular';
+  color: #C36110;
+  border-color: #C36110;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.title-overlay-top-section{
+  font-family: 'Voyage';
+  font-size: 70px !important;
+  @media screen and (max-width:768px) {
+    font-size: 52px !important;
+  }
+}
+
+
+/// home
+///////////////
+.home{
+  .section-overlay-page{
+    .wp-block-cover__background{
+      background-color: #0F2335;
+      opacity: .7;
+    }
+  }
+  .title-overlay-img{
+    font-family: 'Voyage';
+    font-size: 48px !important;
+    @media screen and (max-width:768px) {
+      font-size: 42px !important;
+    }
+  }
+
+  .desc-overlay-img{
+    font-size: 24px;
+    @media screen and (max-width:768px) {
+      font-size: 20px !important;
+    }
+    @media (min-width: 1200px) {
+      width: 83%;
+      margin: auto;
+    }
+  }
+  .btn-overlay-img{
+    background: linear-gradient(122deg, #DC7C47 23.99%, #A04B1F 57.64%, #8A471A 91.29%);
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'MinionProRegular';
+    border-radius: 7px;
+    text-decoration: none;
+    @media screen and (max-width:768px) {
+      display: inline-block;
+      margin-top: -15px;
+    }
+    &:hover{
+      background: #fff;
+      color: #DC7C47;
+    }
+  }
+}
+
+.home-exp-wrapper{
+  background-color: #F0EEDC;
+  color: #4D4D4D;
+  .home-exp-title{
+    font-size: 48px;
+    font-family: 'Voyage';
+  }
+  .home-exp-desc{
+    font-size: 20px;
+    line-height: 185.2%; /* 37.04px */
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+    }
+  }
+  .home-exp-wrapper-list{
+    li{
+      list-style: none;
+      font-size: 24px;
+      font-family: 'Voyage';
+      font-weight: 700;
+      margin-bottom: 15px;
+      a{
+        color: #4D4D4D;
+        .arrow-img{
+          display: inline-flex;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .btn-home-exp-more{
+    font-size: 20px;
+    &:hover{
+      color: #fff;
+      background: #DC7C47;
+      border-color: #DC7C47;
+    }
+  }
+}
+
+
+/// wellness
+///////////////
+.spa-column-wrapper{
+  @media (min-width: 1200px) {
+    margin-right: -10%;
+  }
+  img{
+    object-fit: cover;
+    @media (min-width: 1200px) {
+      height: 450px;
+    }
+  }
+}
+
+.rk-retreat {
+  height: 557px;
+}
+
+.rk-retreat-box {
+  background: #F0EEDC;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 286px;
+  padding: 25px 40px;
+
+  .slick-center & {
+    width: 586px;
+  }
+}
+
+.rk-retreat-content {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  .slick-center & {
+    height: 110px;
+  }
+}
+
+
+.rk-room-images {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/fullscreen.svg) center center no-repeat;
+  }
+
+  &.slick-dotted.slick-slider {
+    margin-bottom: 5px;
+  }
+
+  .slick-dots {
+    bottom: 0px;
+
+    li {
+
+      button:before {
+        content: '';
+        background: white;
+        border-radius: 10px;
+        width: 11px;
+        height: 11px;
+        border: 2px solid white;
+        opacity: 1;
+      }
+
+      &.slick-active {
+        button:before {
+          background: black;
+        }
+      }
+    }
+
+  }
+}
+
+.rk-room {
+  margin-bottom: 60px;
+}
+
+.rk-room-content {
+  padding: 40px 50px 0;
+  color: #4D4D4D;
+  font-size: 12px;
+  min-height: 260px;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+  letter-spacing: 1.3px;
+}
+
+.rk-room-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: 'Voyage';
+}
+
+.rk-room-4 {
+  .rk-room-content {
+    min-height: 191px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .rk-room-text {
+    width: 580px;
+  }
+}
+
+
+/// experience
+////////////////
+.block-exp{
+  .floating-block-exp{
+    padding: 20px;
+    background: rgba(15, 35, 53, 0.39);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    .title-exp-block{
+      font-family: 'MinionProRegular';
+      font-size: 40px;
+    }
+    .desc-exp{
+      font-size: 18px;
+    }
+    .btn-discover{
+      color: #fff;
+      font-size: 20px;
+      border: 1px solid;
+      border-radius: 8px;
+      padding: 8px 40px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px 0;
+      &:hover{
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}
+
+
+// modal
+.modal-xl {
+  max-width: 1400px;
+}
+
+.rk-close {
+  float: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  background: url(../img/cross.svg) center center no-repeat;
+}
+
+
+// footer
+//////////////
+.column-btn-footer{
+  @media screen and (max-width:768px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.form-subs{
+  .w-70{
+    width: 100%;
+    @media (min-width: 1200px) {
+      width: 72%;
+    }
+   input{
+    width: 100%;
+   }
+  }
+  input{
+    background-color: transparent;
+    background: url(../img/bg-form-subs.png) no-repeat;
+    border: none;
+    outline: none;
+    line-height: 95px;
+    padding-left: 20px;
+    font-size: 18px;
+    @media (max-width: 563px) {
+      background-size: 100%;
+      line-height: 80px;
+    }
+    &:focus{
+      background-color: transparent;
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  .btn-submit-subs{
+    background-color: #C36110;
+    color: #0F2335;
+    font-family: 'MinionProRegular';
+    font-size: 20px;
+    border: none;
+
+    @media screen and (max-width:768px) {
+      margin-left: 0 !important;
+    }
+  }
+}
+.rk-footer{
+  background: #0F2335;
+  color: #D9D9D9;
+  .title-section{
+    h1{
+      font-family: 'Voyage';
+      font-size: 40px;
+      color: #fff;
+    }
+  }
+  .subtitle{
+    p{
+      font-size: 22px;
+      @media screen and (max-width:768px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .after-form{
+    font-size: 22px;
+    @media screen and (max-width:768px) {
+      font-size: 18px;
+    }
+  }
+  .footer-bottom-right{
+    ul{
+      li{
+        list-style: none;
+        display: inline-block;
+        padding-right: 10px;
+        &:hover{
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .footer-menus-wrapper{
+    @media screen and (max-width:768px) {
+      padding-bottom: 0 !important;
+    }
+    .footer-menu-left{
+      .footer-block{
+        .title-col{
+          font-size: 13px;
+        }
+        ul{
+          li{
+            list-style: none;
+            font-size: 11px;
+            margin-bottom: 10px;
+            a{
+              color: #D9D9D9;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .footer-menu-center {
+      margin-bottom: 0;
+      list-style: none;
+      text-align: center;
+      a {
+        color: #D9D9D9;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        display: inline-block;
+      }
+    }
+    .footer-right{
+      font-size: 13px;
+      @media screen and (max-width:768px) {
+        text-align: center;
+        .block{
+          margin-top: 20px;
+          text-align: center !important;
+        }
+      }
+      .title-col-large{
+        font-size: 22px;
+        font-family: 'MinionProRegular';
+      }
+    }
+  }
+}
