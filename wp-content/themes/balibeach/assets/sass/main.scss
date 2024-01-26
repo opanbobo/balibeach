@@ -42,6 +42,7 @@ body{
   // font-family: 'UniversLightNormalRegular';
   font-family: 'Wigrum_Regular';
   overflow-x: hidden;
+  background: #E5E5E5;
 }
 
 figure{
@@ -126,11 +127,13 @@ header.wp-block-template-part {
   background: url(../img/x-white.png) center center no-repeat;
 }
 .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{
-  background-color: #0F2335B2 !important;
+  // background-color: #0F2335B2 !important;
+  background: rgba(12, 12, 12, 0.70);
 }
 .wp-block-navigation__responsive-container.is-menu-open {
   padding: 0 20px !important;
-  background-color: #0F2335B2 !important;
+  // background-color: #0F2335B2 !important;
+  background: rgba(12, 12, 12, 0.70);
 }
 
 .wp-block-navigation__responsive-container-content{
@@ -144,7 +147,7 @@ header.wp-block-template-part {
 }
 
 .universe-28{
-  font-family: 'Univers LT Std', sans-serif;
+  // font-family: 'Univers LT Std', sans-serif;
   font-size: 28px;
   font-weight: 700;
   @media screen and (max-width:768px) {
@@ -153,7 +156,7 @@ header.wp-block-template-part {
 }
 
 .universe-20{
-  font-family: 'Univers LT Std', sans-serif;
+  // font-family: 'Univers LT Std', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.85;
@@ -165,7 +168,7 @@ header.wp-block-template-part {
 
 .voyage-48{
   font-family: 'AprisVariableRegular';
-  font-size: 40px;
+  font-size: 38px;
   color: #4D4D4D;
   @media screen and (max-width:768px) {
     font-size: 48px;
@@ -273,14 +276,18 @@ header.wp-block-template-part {
   }
 }
 
-.column-exp-home-wrapper{
-  background: #E5E5E5;
-  padding: 80px 0;
-}
 
 .home-exp-wrapper{
   background-color: #F0EEDC;
   color: #4D4D4D;
+  .wp-block-media-text__media{
+    img{
+      object-fit: cover;
+      @media screen and (min-width:1200px) {
+        height: 775px;
+      }
+    }
+  }
   .home-exp-title{
     font-size: 48px;
     font-family: 'AprisVariableRegular';
@@ -317,6 +324,8 @@ header.wp-block-template-part {
     }
   }
 }
+
+
 
 
 /// wellness
@@ -422,18 +431,6 @@ header.wp-block-template-part {
   font-family: 'AprisVariableRegular';
 }
 
-.rk-room-4 {
-  .rk-room-content {
-    min-height: 191px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .rk-room-text {
-    width: 580px;
-  }
-}
 
 
 /// experience
