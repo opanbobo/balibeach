@@ -565,7 +565,7 @@ header.wp-block-template-part {
     font-size: 20px;
     border: none;
     line-height: 36px;
-    font-family: Tahoma; 
+    font-family: Tahoma;
     margin-left: -10px;
     @media screen and (max-width:768px) {
       margin-left: 0 !important;
@@ -659,4 +659,12 @@ header.wp-block-template-part {
       }
     }
   }
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
