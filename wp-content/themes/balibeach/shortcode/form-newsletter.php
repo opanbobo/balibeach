@@ -15,7 +15,7 @@ function rk_form_newsletter( $atts, $content = null ) {
     $output .= '<input type="text" class="form-control" id="" placeholder="Enter email">';
     $output .= '</div>';
     $output .= '<div class="column-btn-footer">';
-    $output .= '<button type="submit" class="btn btn-primary btn-submit-subs mb-2 ml-4 px-4 py-1 text-uppercase">Submit</button>';
+    $output .= '<button type="submit" class="btn btn-primary btn-submit-subs px-4 py-2 rounded-0">Sign Up</button>';
     $output .= '</div>';
     $output .= '</form>';
     $output .= '</div>';

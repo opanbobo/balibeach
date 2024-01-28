@@ -4,34 +4,42 @@
 }
 
 @font-face {
-  font-family: 'AprisVariableRegular';
-  src: url('../fonts/AprisVariableRegular.eot');
-  src: url('../fonts/AprisVariableRegular.eot') format('embedded-opentype'),
-       url('../fonts/AprisVariableRegular.woff2') format('woff2'),
-       url('../fonts/AprisVariableRegular.woff') format('woff'),
-       url('../fonts/AprisVariableRegular.ttf') format('truetype'),
-       url('../fonts/AprisVariableRegular.svg#AprisVariableRegular') format('svg');
+  font-family: 'Apris';
+    src: url('../fonts/AprisVariable-Regular.eot');
+    src: url('../fonts/AprisVariable-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AprisVariable-Regular.woff2') format('woff2'),
+        url('../fonts/AprisVariable-Regular.woff') format('woff'),
+        url('../fonts/AprisVariable-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Wigrum_Regular';
-  src: url('../fonts/Wigrum_Regular.eot');
-  src: url('../fonts/Wigrum_Regular.eot') format('embedded-opentype'),
-       url('../fonts/Wigrum_Regular.woff2') format('woff2'),
-       url('../fonts/Wigrum_Regular.woff') format('woff'),
-       url('../fonts/Wigrum_Regular.ttf') format('truetype'),
-       url('../fonts/Wigrum_Regular.svg#Wigrum_Regular') format('svg');
+  font-family: 'Apris Medium';
+  src: url('../fonts/Apris-Medium.eot');
+  src: url('../fonts/Apris-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Apris-Medium.woff2') format('woff2'),
+      url('../fonts/Apris-Medium.woff') format('woff'),
+      url('../fonts/Apris-Medium.ttf') format('truetype'),
+      url('../fonts/Apris-Medium.svg#Apris-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 
+
 @font-face {
-  font-family: 'MinionProRegular';
-  src: url('../fonts/MinionProRegular.eot');
-  src: url('../fonts/MinionProRegular.eot') format('embedded-opentype'),
-       url('../fonts/MinionProRegular.woff2') format('woff2'),
-       url('../fonts/MinionProRegular.woff') format('woff'),
-       url('../fonts/MinionProRegular.ttf') format('truetype'),
-       url('../fonts/MinionProRegular.svg#MinionProRegular') format('svg');
+  font-family: 'Wigrum';
+  src: url('../fonts/Wigrum-Regular.eot');
+  src: url('../fonts/Wigrum-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Wigrum-Regular.woff2') format('woff2'),
+      url('../fonts/Wigrum-Regular.woff') format('woff'),
+      url('../fonts/Wigrum-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -40,7 +48,7 @@
 //////////////
 body{
   // font-family: 'UniversLightNormalRegular';
-  font-family: 'Wigrum_Regular';
+  font-family: 'Wigrum';
   overflow-x: hidden;
   background: #E5E5E5;
 }
@@ -64,10 +72,10 @@ figure{
 .wp-block-navigation .wp-block-navigation-item__content{
   text-align: center !important;
   color: #fff !important;
-  font-size: 56px !important;
+  font-size: 52px !important;
   font-family: 'Voyage' !important;
   @media screen and (max-width: 768px) {
-    font-size: 26px;
+    font-size: 40px !important;
   }
 }
 
@@ -83,8 +91,8 @@ figure{
   text-transform: uppercase;
   border-color: #fff !important;
   @media screen and (max-width: 768px) {
-    font-size: 16px !important;
-    padding: 10px 16px !important;
+    font-size: 14px !important;
+    padding: 10px !important;
   }
   &:hover{
     background-color: #fff !important;
@@ -102,9 +110,16 @@ header.wp-block-template-part {
 
 .header-logo {
   position: absolute;
-  top: 80px;
+  top: 127px;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
+  a{
+    width: 145px;
+    @media screen and (max-width:768px) {
+      width: 100px;
+    }
+  }
 }
 
 .wp-block-navigation__responsive-container-open {
@@ -126,14 +141,20 @@ header.wp-block-template-part {
   // background: url(../img/cross.svg) center center no-repeat;
   background: url(../img/x-white.png) center center no-repeat;
 }
+
+.wp-block-navigation__responsive-dialog{
+  padding-top: 15%;
+  @media screen and (max-width:768px) {
+    padding-top: 50%;
+  }
+}
+
 .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{
-  // background-color: #0F2335B2 !important;
-  background: rgba(12, 12, 12, 0.70);
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 .wp-block-navigation__responsive-container.is-menu-open {
   padding: 0 20px !important;
-  // background-color: #0F2335B2 !important;
-  background: rgba(12, 12, 12, 0.70);
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .wp-block-navigation__responsive-container-content{
@@ -147,28 +168,37 @@ header.wp-block-template-part {
 }
 
 .universe-28{
-  // font-family: 'Univers LT Std', sans-serif;
-  font-size: 28px;
+  font-family: 'Univers LT Std', sans-serif;
+  font-size: 20px;
   font-weight: 700;
   @media screen and (max-width:768px) {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 
 .universe-20{
-  // font-family: 'Univers LT Std', sans-serif;
+  font-family: 'Univers LT Std', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.85;
   color: #4d4d4d;
-  @media screen and (max-width:768px) {
-    font-size: 20px;
-  }
+  // @media screen and (max-width:768px) {
+  //   font-size: 20px;
+  // }
+}
+
+.universe-12{
+  // font-family: 'Univers LT Std', sans-serif;
+  color: #4D4D4D;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+  letter-spacing: 1.3px;
 }
 
 .voyage-48{
-  font-family: 'AprisVariableRegular';
-  font-size: 38px;
+  font-family: 'Apris';
+  font-size: 40px;
   color: #4D4D4D;
   @media screen and (max-width:768px) {
     font-size: 48px;
@@ -187,28 +217,28 @@ header.wp-block-template-part {
 
 .title-section-page{
   // font-family: 'MinionProRegular';
-  font-family: 'AprisVariableRegular';
-  font-size: 56px;
+  font-family: 'Apris Medium';
+  font-size: 48px;
   color: #0F2335;
   @media screen and (max-width:768px) {
-    font-size: 50px;
+    font-size: 48px;
   }
 }
 
 .subtitle-section-page-top{
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 20px;
+  // font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
 }
 
 .subtitle-section-page{
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 500;
   color: #4D4D4D;
   line-height: 150%;
   @media screen and (max-width:768px) {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -221,10 +251,10 @@ header.wp-block-template-part {
 }
 
 .title-overlay-top-section{
-  font-family: 'Voyage' !important;
-  font-size: 70px !important;
+  font-family: 'Apris Medium';
+  font-size: 60px !important;
   @media screen and (max-width:768px) {
-    font-size: 52px !important;
+    font-size: 40px !important;
   }
 }
 
@@ -233,27 +263,29 @@ header.wp-block-template-part {
 ///////////////
 .home{
   .section-overlay-page{
+    @media screen and (max-width:768px) {
+      min-height: 764px;
+    }
     .wp-block-cover__background{
-      background: rgba(15, 1, 1, 0.60); 
+      background-color: #000;
       opacity: .7;
     }
   }
   .title-overlay-img{
-    font-family: 'AprisVariableRegular' !important;
-    font-size: 56px !important;
-    letter-spacing: 2.24px; 
+    font-family: 'Apris Medium';
+    font-size: 48px !important;
     @media screen and (max-width:768px) {
       font-size: 42px !important;
     }
   }
 
   .desc-overlay-img{
-    font-size: 24px;
+    font-size: 18px;
     @media screen and (max-width:768px) {
-      font-size: 20px !important;
+      font-size: 16px !important;
     }
     @media (min-width: 1200px) {
-      width: 83%;
+      width: 1142px;
       margin: auto;
     }
   }
@@ -276,35 +308,29 @@ header.wp-block-template-part {
   }
 }
 
-
 .home-exp-wrapper{
   background-color: #F0EEDC;
   color: #4D4D4D;
-  .wp-block-media-text__media{
-    img{
-      object-fit: cover;
-      @media screen and (min-width:1200px) {
-        height: 775px;
-      }
+  .home-exp-title{
+    font-size: 48px !important;
+    font-family: 'Apris Medium';
+    @media screen and (max-width:768px) {
+      font-size: 42px !important;
     }
   }
-  .home-exp-title{
-    font-size: 48px;
-    font-family: 'AprisVariableRegular';
-  }
   .home-exp-desc{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 185.2%; /* 37.04px */
     @media screen and (max-width:768px) {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   .home-exp-wrapper-list{
     li{
       list-style: none;
       font-size: 24px;
-      font-family: 'AprisVariableRegular';
-      // font-weight: 700;
+      font-family: 'Apris';
+      font-weight: 700;
       margin-bottom: 15px;
       a{
         color: #4D4D4D;
@@ -324,8 +350,6 @@ header.wp-block-template-part {
     }
   }
 }
-
-
 
 
 /// wellness
@@ -418,7 +442,7 @@ header.wp-block-template-part {
 .rk-room-content {
   padding: 40px 50px 0;
   color: #4D4D4D;
-  font-size: 12px;
+  font-size: 16px;
   min-height: 260px;
   letter-spacing: 0.05em;
   line-height: 23px;
@@ -428,7 +452,7 @@ header.wp-block-template-part {
 .rk-room-title {
   text-transform: uppercase;
   font-size: 24px;
-  font-family: 'AprisVariableRegular';
+  font-family: 'Apris';
 }
 
 
@@ -489,6 +513,22 @@ header.wp-block-template-part {
 
 // footer
 //////////////
+.logo-meru-bottom{
+  width: 70% !important;
+  margin-top: 10px;
+}
+.footer-bottom-left{
+  a{
+    img{
+      width: 90%;
+    }
+  }
+}
+.footer-bottom{
+  @media screen and (max-width:768px) {
+    justify-content: center !important;
+  }
+}
 .column-btn-footer{
   @media screen and (max-width:768px) {
     display: flex;
@@ -508,30 +548,25 @@ header.wp-block-template-part {
   }
   input{
     background-color: transparent;
-    background: url(../img/bg-form-subs.png) no-repeat;
+    background: #fff;
     border: none;
     outline: none;
-    line-height: 95px;
+    line-height: 40px;
     padding-left: 20px;
     font-size: 18px;
     @media (max-width: 563px) {
       background-size: 100%;
       line-height: 80px;
     }
-    &:focus{
-      background-color: transparent;
-      outline: none;
-      border: none;
-      box-shadow: none;
-    }
   }
   .btn-submit-subs{
-    background-color: #C36110;
-    color: #0F2335;
-    font-family: 'MinionProRegular';
+    background-color: #F0EEDC;
+    color: #031935;
     font-size: 20px;
     border: none;
-
+    line-height: 36px;
+    font-family: Tahoma; 
+    margin-left: -10px;
     @media screen and (max-width:768px) {
       margin-left: 0 !important;
     }
@@ -542,23 +577,26 @@ header.wp-block-template-part {
   color: #D9D9D9;
   .title-section{
     h1{
-      font-family: 'AprisVariableRegular';
-      font-size: 40px;
+      font-family: 'Apris';
+      font-size: 35px;
       color: #fff;
+      @media screen and (max-width:768px) {
+        font-size: 30px;
+      }
     }
   }
   .subtitle{
     p{
-      font-size: 22px;
+      font-size: 18px;
       @media screen and (max-width:768px) {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
   .after-form{
-    font-size: 22px;
+    font-size: 18px;
     @media screen and (max-width:768px) {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   .footer-bottom-right{
