@@ -53,7 +53,7 @@ function rk_room( $atts, $content = null ) {
         ['sanur.jpg','deluxe.jpg', 'corner.jpg', 'premier.jpg'],
         ['royal.jpg','deluxe.jpg', 'corner.jpg', 'premier.jpg'],
         ['bbc-suite.jpg','deluxe.jpg', 'corner.jpg', 'premier.jpg'],
-        ['president-suite.jpg','deluxe.jpg', 'corner.jpg', 'premier.jpg'],
+        ['president-suite.jpeg','deluxe.jpg', 'corner.jpg', 'premier.jpg'],
         // ['presidential.jpg','presidential.jpg','presidential.jpg','presidential.jpg']
     ];
 
