@@ -9,6 +9,7 @@ module.exports = function(grunt) {
         src: 'node_modules',
         tmp: '.tmp',
         theme: 'wp-content/themes/balibeach',
+        preUpload: 'pre-upload',
     };
 
     grunt.initConfig({
@@ -16,6 +17,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         clean: {
             tmp: '<%= config.tmp %>',
+            preUpload: '<%= config.preUpload %>/*',
             css: [
                 '<%= config.theme %>/assets/css/*.css',
                 '<%= config.theme %>/assets/css/**/*.css',
