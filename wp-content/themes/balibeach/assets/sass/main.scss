@@ -425,6 +425,7 @@ header.wp-block-template-part {
       img{
         @media screen and (min-width:1200px) {
           height: 395px;
+          width: 100%;
           object-fit: cover;
         }
       }
