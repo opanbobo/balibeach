@@ -420,6 +420,17 @@ header.wp-block-template-part {
     margin-bottom: 5px;
   }
 
+  .rk-room-image{
+    a{
+      img{
+        @media screen and (min-width:1200px) {
+          height: 395px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
   .slick-dots {
     bottom: 0px;
 
