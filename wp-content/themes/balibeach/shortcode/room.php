@@ -24,7 +24,7 @@ function rk_room( $atts, $content = null ) {
             'content' => 'Experience a 81 square meters with a private balcony and breathtaking ocean views. Elevate your stay in our Deluxe Ocean Suite, features a bedroom, work space for your utmost comfort.',
         ],
         [
-            'title' => 'EXECUTIVE SUITES',
+            'title' => 'EXECUTIVE SUITE',
             'content' => 'Indulge in a spacious 90 square meters retreat that seamlessly combines expansive comfort with captivating Indian Ocean views. Ensuring a stay that is both indulgent and unforgettable.',
         ],
         [
