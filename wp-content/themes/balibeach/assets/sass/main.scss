@@ -360,7 +360,14 @@ header.wp-block-template-part {
     }
   }
 }
-
+.btn-reserve{
+  font-size: 20px;
+  &:hover{
+    color: #fff;
+    background: #4D4D4D;
+    border-color: #4D4D4D;
+  }
+}
 
 /// wellness
 ///////////////
@@ -459,6 +466,17 @@ header.wp-block-template-part {
 
 .rk-room {
   margin-bottom: 60px;
+  @media screen and (max-width:768px) {
+    margin-bottom: 35px;
+  }
+}
+
+.rk-room-7{
+  .rk-room-content{
+    @media screen and (max-width:768px) {
+      padding-top: 0;
+    }
+  }
 }
 
 .rk-room-content {
@@ -472,6 +490,17 @@ header.wp-block-template-part {
   @media screen and (max-width:768px) {
     font-size: 14px;
   }
+  .btn-reserve-room{
+    @media screen and (max-width:768px) {
+      text-align: center;
+    }
+    .desc {
+      @media screen and (min-width: 1200px) {
+        min-height: 120px;
+      }
+    }
+  }
+  
 }
 
 .rk-room-title {

@@ -74,7 +74,8 @@ function rk_room( $atts, $content = null ) {
     $output .= '<div class="rk-room-content">';
     $output .= '<div class="rk-room-text">';
     $output .= '<h2 class="rk-room-title">'. $content[$atts['id']]['title'] .'</h2>';
-    $output .= '<p>'. $content[$atts['id']]['content'] .'</p>';
+    $output .= '<p class="desc">'. $content[$atts['id']]['content'] .'</p>';
+    $output .= '<div class="btn-reserve-room"><a class="btn-reserve btn btn-outline-primary py-1 px-4 mb-10" href="https://staahmax.staah.net/be/index_be?propertyId=OTEzMA==&individual=true" target="_blank">RESERVE</a></div>';
     $output .= '</div>';
     $output .= '</div>';
 
