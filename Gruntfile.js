@@ -120,6 +120,12 @@ module.exports = function(grunt) {
         'cssmin:cssMain',
     ]);
 
+    grunt.registerTask('all', [
+        'jsVendor',
+        'jsMain',
+        'cssMain',
+    ]);
+
     grunt.registerTask('default', [
         'browserSync',
         'watch',
