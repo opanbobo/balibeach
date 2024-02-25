@@ -1,0 +1,136 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-no-container",
+			"postTypes": ["page"],
+			"title": "Page No Contaier"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				},
+				{
+					"color": "#fff",
+					"name": "White",
+					"slug": "white"
+				},
+				{
+					"color": "#000",
+					"name": "Black",
+					"slug": "black"
+				}
+			]
+		},
+		"spacing": {
+			"spacingScale": {
+				"steps": 0
+			}
+		},
+		"typography": {
+			"dropCap": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Apris",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/AprisVariable-Regular.eot",
+								"file:./assets/fonts/AprisVariable-Regular.woff",
+								"file:./assets/fonts/AprisVariable-Regular.woff2",
+								"file:./assets/fonts/AprisVariable-Regular.ttf",
+								"file:./assets/fonts/AprisVariable-Regular.svg"
+							]
+						}
+					],
+					"fontFamily": "\"Apris\", serif",
+					"name": "Apris",
+					"slug": "apris"
+				},
+                {
+					"fontFace": [
+						{
+							"fontFamily": "Apris Medium",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/Apris-Medium.eot",
+								"file:./assets/fonts/Apris-Medium.woff",
+								"file:./assets/fonts/Apris-Medium.woff2",
+								"file:./assets/fonts/Apris-Medium.ttf",
+								"file:./assets/fonts/Apris-Medium.svg"
+							]
+						}
+					],
+					"fontFamily": "\"Apris Medium\", serif",
+					"name": "Apris Medium",
+					"slug": "apris-medium"
+				},
+                {
+					"fontFace": [
+						{
+							"fontFamily": "Wigrum",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/Wigrum-Regular.eot",
+								"file:./assets/fonts/Wigrum-Regular.woff",
+								"file:./assets/fonts/Wigrum-Regular.woff2",
+								"file:./assets/fonts/Wigrum-Regular.ttf",
+								"file:./assets/fonts/Wigrum-Regular.svg"
+							]
+						}
+					],
+					"fontFamily": "\"Wigrum\", sans serif",
+					"name": "Wigrum",
+					"slug": "wigrum"
+				}
+			],
+			"fontSizes": [
+                {
+					"fluid": false,
+					"size": "16px",
+					"slug": "fs-16"
+				},
+                {
+					"fluid": false,
+					"size": "20px",
+					"slug": "fs-20"
+				},
+                {
+					"fluid": false,
+					"size": "24px",
+					"slug": "fs-24"
+				}
+			]
+		}
+	}
+}
