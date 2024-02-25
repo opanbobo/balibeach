@@ -3,45 +3,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Apris';
-    src: url('../fonts/AprisVariable-Regular.eot');
-    src: url('../fonts/AprisVariable-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/AprisVariable-Regular.woff2') format('woff2'),
-        url('../fonts/AprisVariable-Regular.woff') format('woff'),
-        url('../fonts/AprisVariable-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-  font-family: 'Apris Medium';
-  src: url('../fonts/Apris-Medium.eot');
-  src: url('../fonts/Apris-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Apris-Medium.woff2') format('woff2'),
-      url('../fonts/Apris-Medium.woff') format('woff'),
-      url('../fonts/Apris-Medium.ttf') format('truetype'),
-      url('../fonts/Apris-Medium.svg#Apris-Medium') format('svg');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-
-@font-face {
-  font-family: 'Wigrum';
-  src: url('../fonts/Wigrum-Regular.eot');
-  src: url('../fonts/Wigrum-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Wigrum-Regular.woff2') format('woff2'),
-      url('../fonts/Wigrum-Regular.woff') format('woff'),
-      url('../fonts/Wigrum-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 
 
 // general
@@ -112,11 +73,15 @@ header.wp-block-template-part {
 }
 
 .header-logo {
-  position: absolute;
-  top: 127px;
+  position: absolute#{$additional-important};
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  @if ($additional-selector == '') {
+    top: 127px;
+  } @else {
+    top: 0px;
+  }
   @media screen and (max-width: 768px) {
     top: 57px;
     left: 55%;
@@ -321,6 +286,10 @@ header.wp-block-template-part {
 .home-exp-wrapper{
   background-color: #F0EEDC;
   color: #4D4D4D;
+  .wp-block-media-text__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .home-exp-title{
     font-size: 48px !important;
     font-family: 'Apris Medium';
@@ -500,7 +469,7 @@ header.wp-block-template-part {
       }
     }
   }
-  
+
 }
 
 .rk-room-title {
