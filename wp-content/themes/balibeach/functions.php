@@ -76,6 +76,14 @@ function rk_image_size_names_choose() {
 }
 add_filter( 'image_size_names_choose', 'rk_image_size_names_choose');
 
+function rk_ga_insert() {
+?><!-- Google Analytics Code -->
+
+<!-- End Google Analytics Code -->
+<?php
+}
+add_action('wp_head', 'rk_ga_insert');
+
 function rk_html_id($output) {
 	$output .= ' id="rk"';
 
