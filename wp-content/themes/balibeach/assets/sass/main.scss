@@ -48,16 +48,24 @@ figure{
 
 .btn-top-header{
   font-size: 20px !important;
-  color: #fff !important;
+  color: #0F2335 !important;
   text-transform: uppercase;
-  border-color: #fff !important;
+  border-color: #0F2335 !important;
   @media screen and (max-width: 768px) {
     font-size: 14px !important;
     padding: 10px !important;
   }
   &:hover{
     background-color: #fff !important;
-    color: #000 !important;
+    color: #0F2335 !important;
+  }
+}
+
+.page-template-page-hero .btn-top-header{
+  color: #fff !important;
+  border-color: #fff !important;
+  &:hover{
+    color: #0F2335 !important;
   }
 }
 
@@ -66,6 +74,12 @@ header.wp-block-template-part {
   padding-bottom: 130px;
   position: relative;
   z-index: 10;
+  @media screen and (max-width: 768px) {
+    padding: 115px 0 80px;
+  }
+}
+
+.page-template-page-hero header.wp-block-template-part {
   margin-bottom: -322px;
   @media screen and (max-width: 768px) {
     padding: 50px 0;
@@ -94,45 +108,53 @@ header.wp-block-template-part {
   }
 }
 
-.wp-block-navigation__responsive-container-open {
-  width: 42px;
-  height: 42px;
-  background: url(../img/burger.svg) center center no-repeat;
-}
+.rk-nav-header {
+  .wp-block-navigation__responsive-container-open {
+    width: 42px;
+    height: 42px;
+    background: url(../img/burger-black.svg) center center no-repeat;
+  }
 
-.wp-block-navigation__responsive-container-open svg,
-.wp-block-navigation__responsive-container-close svg {
-  display: none;
-}
+  .wp-block-navigation__responsive-container-open svg,
+  .wp-block-navigation__responsive-container-close svg {
+    display: none;
+  }
 
-.wp-block-navigation__responsive-container-close {
-  top: 15px;
-  right: 5%;
-  width: 42px;
-  height: 42px;
-  // background: url(../img/cross.svg) center center no-repeat;
-  background: url(../img/x-white.png) center center no-repeat;
-}
+  .wp-block-navigation__responsive-container-close {
+    top: 15px;
+    right: 5%;
+    width: 42px;
+    height: 42px;
+    // background: url(../img/cross.svg) center center no-repeat;
+    background: url(../img/x-white.png) center center no-repeat;
+  }
 
-.wp-block-navigation__responsive-dialog{
-  padding-top: 15%;
-  @media screen and (max-width:768px) {
-    padding-top: 50%;
+  .wp-block-navigation__responsive-dialog{
+    padding-top: 15%;
+    @media screen and (max-width:768px) {
+      padding-top: 50%;
+    }
+  }
+
+  .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+  .wp-block-navigation__responsive-container.is-menu-open {
+    padding: 0 20px !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+
+  .wp-block-navigation__responsive-container-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open{
-  background-color: rgba(0, 0, 0, 0.7) !important;
-}
-.wp-block-navigation__responsive-container.is-menu-open {
-  padding: 0 20px !important;
-  background-color: rgba(0, 0, 0, 0.7) !important;
-}
-
-.wp-block-navigation__responsive-container-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page-template-page-hero .rk-nav-header {
+  .wp-block-navigation__responsive-container-open {
+    background: url(../img/burger.svg) center center no-repeat;
+  }
 }
 
 .rk-top-banner {
