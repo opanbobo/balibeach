@@ -92,7 +92,7 @@ header.wp-block-template-part {
   transform: translateX(-50%);
   text-align: center;
   @if ($additional-selector == '') {
-    top: 127px;
+    top: 100px;
   } @else {
     top: 0px;
   }
@@ -333,12 +333,21 @@ header.wp-block-template-part {
       font-family: 'Apris';
       font-weight: 700;
       margin-bottom: 5px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .arrow-img{
+        display: inline-flex;
+        margin-right: 10px;
+        width: 9px;
+        line-height: 0;
+      }
+
       a{
         color: #4D4D4D;
-        .arrow-img{
-          display: inline-flex;
-          margin-left: 10px;
-        }
       }
     }
   }
