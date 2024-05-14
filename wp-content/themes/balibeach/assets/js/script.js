@@ -19,20 +19,20 @@ jQuery(document).ready(function($) {
     });
 
 
-    $('.rk-room-images').slick({
-        slidesToShow: 1,
-        dots: false,
-        arrows: false,
-        draggable: false,
-    });
+    // $('.rk-room-images').slick({
+    //     slidesToShow: 1,
+    //     dots: false,
+    //     arrows: false,
+    //     draggable: false,
+    // });
 
-    $('.rk-room').each(function(i, el){
-        var $el = $(el);
+    // $('.rk-room').each(function(i, el){
+    //     var $el = $(el);
 
-        var lightboxDescription = GLightbox({
-            selector: '.rk-room-' + $el.data('id') + ' .rk-room-image-link',
-        });
-    });
+    //     var lightboxDescription = GLightbox({
+    //         selector: '.rk-room-' + $el.data('id') + ' .rk-room-image-link',
+    //     });
+    // });
 
 
 

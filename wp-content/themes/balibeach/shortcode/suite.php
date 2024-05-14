@@ -46,9 +46,9 @@ function rk_suite( $atts, $content = null ) {
             $output .= '<div class="rk-room-images">';
 
             $output .= rk_suite_get_image('image_1');
-            $output .= rk_suite_get_image('image_2');
-            $output .= rk_suite_get_image('image_3');
-            $output .= rk_suite_get_image('image_4');
+            // $output .= rk_suite_get_image('image_2');
+            // $output .= rk_suite_get_image('image_3');
+            // $output .= rk_suite_get_image('image_4');
 
             $output .= '</div>'; // rk-room-images
 
@@ -92,7 +92,8 @@ function rk_suite_get_image($field_name = 'image_1') {
     if (empty($image_src)) return;
 
     $output .= '<div class="rk-room-image">';
-    $output .= '<a class="rk-room-image-link" href="'. esc_url($image_src[0]) .'"><img class="img-fluid" src="'. esc_url($thumb_src[0]) .'" /></a>';
+    // $output .= '<a class="rk-room-image-link" href="'. esc_url($image_src[0]) .'"><img class="img-fluid" src="'. esc_url($thumb_src[0]) .'" /></a>';
+    $output .= '<a class="rk-room-image-link"><img class="img-fluid" src="'. esc_url($thumb_src[0]) .'" /></a>';
     $output .= '</div>'; // rk-room-image
 
     return $output;
