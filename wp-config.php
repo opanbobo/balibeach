@@ -42,6 +42,7 @@ define( 'DB_CHARSET', 'utf8' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+
 /**#@+
  * Authentication unique keys and salts.
  *
@@ -53,14 +54,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY',         '4ZjO!+3qSbaH<f}<IGBAPVmpX5b+OdivHg)`1+gz6 5+&o%*:kDcI{EXg+;:DTO3');
+define('SECURE_AUTH_KEY',  '{xX/V:G/weoxGNZ}N@Regb A!DKP0ZO4J29a=?=N=1ZpFa9HO@}7lvU)X-j)O#xG');
+define('LOGGED_IN_KEY',    '70S|J78%]|xO%MfVI#InrW1 0/&,=N=uye)#3Ju,}s 5I.^7@C34UIF-z6B*9eHf');
+define('NONCE_KEY',        'oV`69f.6Cw*HLS` -p=%|J=DRI)0b.QkBcTiZcO;c|qX}`82+<fm+|Gqsp{c+g3p');
+define('AUTH_SALT',        'Z/@2+K38hr-M+E2`WYwFYt6W-T]k;q/_-W1.r`97mh,yTjCIo^FO+1*upP/_-q7y');
+define('SECURE_AUTH_SALT', '-r:d f~4@cv`^MC*x9V0BK_;%j&G56)]y,|+BN|]>g?!cbY&R~+4cNKB?Q yWb/Y');
+define('LOGGED_IN_SALT',   ',t,^cR#5y7X2;G+U.A!D9/a{Gtu<iZ|j<G7dhkuChG%|;+)Ul8ZQz;C$VVmgR/]r');
+define('NONCE_SALT',       'p+Jqo0]eQdf4-o}HqqWbR,2)zr~ChXYDNvFDL$PM*y]#W|}[|?>4;rGE&C[gx|ys');
 
 /**#@-*/
 
@@ -99,3 +100,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+
+define('DISALLOW_FILE_EDIT', true);
