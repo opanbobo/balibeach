@@ -18,6 +18,24 @@ jQuery(document).ready(function($) {
         slidesToShow: 3
     });
 
+    $('.rk-events').slick({
+        centerMode: true,
+        centerPadding: '80px',
+        slidesToShow: 2,
+        dots: true,
+        arrows: false,
+        responsive: [{
+            breakpoint: 1366,
+            settings: {
+                centerPadding: '0px',
+            },
+        },
+        {
+            breakpoint: 1024,
+            settings: "unslick"
+        }]
+    });
+
 
     // $('.rk-room-images').slick({
     //     slidesToShow: 1,

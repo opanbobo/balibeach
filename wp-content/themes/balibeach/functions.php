@@ -5,6 +5,7 @@ require( get_template_directory() . '/shortcode/form-newsletter.php' );
 require( get_template_directory() . '/shortcode/select-destination.php' );
 require( get_template_directory() . '/shortcode/slider.php' );
 require( get_template_directory() . '/shortcode/suite.php' );
+require( get_template_directory() . '/shortcode/event.php' );
 require( get_template_directory() . '/shortcode/home-popup.php' );
 
 require( get_template_directory() . '/blocks/init.php' );
@@ -78,6 +79,14 @@ function rk_image_size_names_choose() {
 }
 add_filter( 'image_size_names_choose', 'rk_image_size_names_choose');
 
+function rk_calculate_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
+    return [];
+}
+
+add_filter( 'wp_calculate_image_srcset', 'rk_calculate_image_srcset', 1000, 5 );
+
+add_filter( 'big_image_size_threshold', '__return_false' );
+
 function rk_ga_insert() {
 ?><!-- Google Analytics Code -->
 
@@ -116,7 +125,7 @@ add_action('save_post', 'rk_update_theme_file_on_save_post');
 
 function rk_post_template_structure_update( $block_content, $block ) {
 
-    if ( 'core/post-content' == $block['blockName'] && !is_single()) {
+    if ( 'core/post-content' == $block['blockName']) {
         $block_content = str_replace(['is-layout-constrained'],
             ['rl-is-layout-constrained'], $block_content);
     }
@@ -144,13 +153,13 @@ function rk_wp_title($title) {
 
 function rk_body_classes($classes) {
 
-    if (is_post_type_archive( 'hotel' )) {
-        $classes[] = 'archive-hotel-custom';
+    if (get_post_type() === 'event') {
+        $classes[] = 'template-hero';
     }
 
     return $classes;
 }
-// add_filter('body_class', 'rk_body_classes');
+add_filter('body_class', 'rk_body_classes');
 
 function rk_get_template_part($id) {
     $block_id = $id;
