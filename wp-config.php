@@ -20,21 +20,21 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-// define( 'DB_NAME', 'u963765151_balilocal' );
+define( 'DB_NAME', 'u963765151_balilocal' );
 
-// /** Database username */
-// define( 'DB_USER', 'u963765151_balilocal' );
+/** Database username */
+define( 'DB_USER', 'u963765151_balilocal' );
 
-// /** Database password */
-// define( 'DB_PASSWORD', 'BalipasS@123' );
+/** Database password */
+define( 'DB_PASSWORD', 'BalipasS@123' );
 
-// /** Database hostname */
-// define( 'DB_HOST', '153.92.15.5' );
+/** Database hostname */
+define( 'DB_HOST', '153.92.15.5' );
 
-define( 'DB_NAME', 'balibeach' );
-define( 'DB_USER', 'root' );
-define( 'DB_PASSWORD', '' );
-define( 'DB_HOST', 'localhost' );
+// define( 'DB_NAME', 'balibeach' );
+// define( 'DB_USER', 'root' );
+// define( 'DB_PASSWORD', '' );
+// define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
