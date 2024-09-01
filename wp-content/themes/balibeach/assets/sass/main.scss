@@ -374,6 +374,152 @@ header.wp-block-template-part {
     }
   }
 }
+
+.rk-accomodation-highlight {
+  background-color: #212121;
+  color: #EDEBE4;
+  .wp-block-media-text__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 982px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  .rk-accomodation-highlight-title{
+    font-size: 40px !important;
+    font-family: 'Apris Medium';
+    strong {
+      font-size: 80px !important;
+      font-family: 'EmbassyOpti';
+      font-weight: 500;
+      margin-right: 20px;
+    }
+    @media screen and (max-width:768px) {
+      font-size: 38px !important;
+    }
+  }
+  .rk-accomodation-highlight-desc{
+    font-size: 18px;
+    line-height: 185.2%; /* 37.04px */
+
+    @media screen and (max-width:768px) {
+      font-size: 14px;
+    }
+  }
+
+  .wp-bootstrap-blocks-button {
+    font-family: 'Apris Medium';
+    font-size: 15px;
+    border-color: #212121;
+    position: absolute;
+    bottom: 150px;
+    right: 100px;
+
+    a {
+      color: #EDEBE4;
+      padding: 10px 30px;
+      text-decoration: none;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 14px;
+        height: 16px;
+        transform: translateY(-50%);
+        background: url(../img/arrow-right.png) center center no-repeat;
+      }
+    }
+
+  }
+}
+
+.rk-accomodation-items {
+  padding: 45px 0;
+  position: relative;
+
+  > .container {
+    z-index: 10;
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 252px;
+    height: 259px;
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    background: url(../img/pattern-top-right.webp) center center no-repeat;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+    background: url(../img/pattern-bottom-left.webp) center center no-repeat;
+  }
+}
+
+.rk-accomodation-item {
+  padding: 45px 0;
+
+  .wp-block-heading {
+    font-size: 40px !important;
+    font-family: 'Apris Medium';
+    strong {
+      font-size: 80px !important;
+      font-family: 'EmbassyOpti';
+      font-weight: 500;
+      margin-right: 20px;
+    }
+    @media screen and (max-width:768px) {
+      font-size: 38px !important;
+    }
+  }
+
+  .rk-accomodation-item-desc {
+    font-size: 18px;
+    line-height: 185.2%; /* 37.04px */
+
+    @media screen and (max-width:768px) {
+      font-size: 14px;
+    }
+  }
+
+  .wp-bootstrap-blocks-button {
+    font-family: 'Apris Medium';
+    font-size: 15px;
+    border-color: #212121;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    a {
+      color: #212121;
+      padding: 10px 30px 10px 10px;
+      text-decoration: none;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 14px;
+        height: 16px;
+        transform: translateY(-50%);
+        background: url(../img/arrow-right-white.png) center center no-repeat;
+      }
+    }
+
+  }
+}
+
 .btn-reserve{
   font-size: 20px;
   &:hover{
